@@ -6,7 +6,7 @@ with station as (
     start_lat as lat,
     start_lng as lng
     from {{ source('demo', 'bike') }}
-    where started_at != 'started_at'
+    where started_at != 'starttime'
 )
 
 select *
